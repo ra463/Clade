@@ -1,0 +1,203 @@
+.job_title {
+    border: 1px solid #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 2rem 4rem;
+
+    .grp_1 {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        h1 {
+            font-size: 35px;
+            margin: 0;
+        }
+
+        .para {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        span {
+            color: #888888;
+            font-size: 14px;
+        }
+
+        .open {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 0 7px;
+            border-radius: 30px;
+            border: 1px solid #abefc6;
+            background: #ecfdf3;
+
+            span {
+                color: #067647;
+            }
+
+            .ellipse_2 {
+                width: 4px;
+                height: 4px;
+                background: #17b26a;
+                border-radius: 50%;
+            }
+        }
+    }
+    .grp_2 {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+        }
+    }
+}
+
+.job_details {
+    border: 1px solid #e7e7e7;
+    display: flex;
+    gap: 32px 64px;
+    padding: 2rem 4rem;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .list {
+            list-style: none;
+
+            li {
+                padding: 3px 5px;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border-radius: 5px;
+                border: 1px solid #d0d5dd;
+            }
+        }
+
+        span {
+            color: #6e6d6d;
+            font-size: 14px;
+
+            &:nth-child(2) {
+                font-weight: bold;
+                font-size: 16px;
+                color: black;
+            }
+        }
+    }
+}
+
+.job_description {
+    border: 1px solid #e7e7e7;
+    padding: 2rem 4rem;
+    .title {
+        color: #6e6d6d;
+        font-size: 14px;
+    }
+    .details {
+        margin-top: 5px;
+        font-size: 15px;
+        color: #3d3d3d;
+
+        div {
+            margin-left: 10px;
+            line-height: 28px;
+        }
+        .points {
+            margin-left: 0;
+            list-style: none;
+        }
+    }
+}
+
+.company_details {
+    border: 1px solid #e7e7e7;
+    padding: 2rem 4rem;
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #4f4f4f;
+        font-size: 20px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+        }
+    }
+    .details {
+        margin-top: 1.6rem;
+        display: flex;
+        gap: 48px;
+
+        .grp_1,
+        .grp_2 {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .card {
+                display: flex;
+                gap: 6px;
+                flex-direction: column;
+
+                span {
+                    &:nth-child(1) {
+                        color: #6e6d6d;
+                        font-size: 14px;
+                    }
+                    &:nth-child(2) {
+                        font-size: 15px;
+                        color: #3d3d3d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ellipse_1 {
+    width: 4px;
+    height: 4px;
+    background: #d1d1d1;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .job_title {
+        padding: 2rem 1.5rem;
+        .grp_1 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .job_details{
+        padding: 2rem 1.5rem;
+    }
+
+    .job_description {
+        padding: 2rem 1.5rem;
+    }
+
+    .company_details {
+        padding: 2rem 1.5rem;
+        .details {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}

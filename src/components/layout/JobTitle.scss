@@ -1,0 +1,35 @@
+.ribbon {
+    padding: 0 4rem;
+    border: 1px solid #e7e7e7;
+    .tabs {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        width: 33rem;
+        gap: 72px;
+
+        li {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            height: 3.2rem;
+            color: #888888;
+        }
+        .active {
+            color: #dc4a2d;
+            font-weight: bold;
+            border-bottom: 2px solid #dc4a2d;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ribbon {
+        padding: 0 1.5rem;
+        .tabs {
+            width: 100%;
+            max-width: 100vw;
+            overflow-y: scroll;
+        }
+    }
+}

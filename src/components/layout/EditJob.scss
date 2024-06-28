@@ -1,0 +1,65 @@
+.edit_job {
+    padding: 2rem 1rem;
+    .btns {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 0.8px solid;
+            padding: 12px 2.2rem;
+            cursor: pointer;
+            border-radius: 8px;
+
+            img {
+                width: 15px;
+                height: 15px;
+            }
+
+            &:nth-child(1) {
+                color: #dc4a2d;
+                border-color: #dc4a2d;
+                background: #fef4f2;
+            }
+            &:nth-child(2) {
+                background: #dc4a2d;
+                color: #fef4f2;
+                border: 2px solid #fed3ca;
+            }
+        }
+    }
+    .details {
+        padding: 12px;
+        .card {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            justify-content: space-between;
+            border-bottom: 1px solid #e7e7e7;
+
+            span {
+                &:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: #4f4f4f;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    color: #3d3d3d;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}
