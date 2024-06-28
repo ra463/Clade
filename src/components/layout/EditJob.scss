@@ -4,12 +4,15 @@
         display: flex;
         align-items: center;
         gap: 16px;
+
         button {
+            width: 100%;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             border: 0.8px solid;
-            padding: 12px 28px;
+            padding: 12px 0;
             cursor: pointer;
             border-radius: 8px;
 
